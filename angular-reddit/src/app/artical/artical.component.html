@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-sm" style="background-color: gainsboro;">
+        <div class="text-justify">
+            <div class="h4">
+                {{ artical.votes }}
+            </div>
+            <div class="h5">
+                Points
+            </div>
+        </div>
+    </div>
+    <div class="col-md">
+        <a href="{{artical.link}}" class="h4">
+            {{artical.title}}
+        </a>
+        <ul>
+            <li>
+                <a href="" (click)="voteUp()">
+                    <i class="arrow up icon"></i>
+                    Up Vote
+                </a>
+            </li>
+            <li>
+                <a href="" (click)="voteDown()">
+                    <i></i>
+                    Down Vote
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

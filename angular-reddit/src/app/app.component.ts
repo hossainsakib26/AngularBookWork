@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-reddit';
+
+  addArtical(title: HTMLInputElement, link: HTMLInputElement): boolean {
+    console.log('Adding artical Title:' + title.value+'  and Link: ' + link.value);
+    return false;
+  }
+
 }
